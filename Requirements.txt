@@ -1,0 +1,22 @@
+# VoiceFlow AI Assistant - Requirements
+# Install with: pip install -r requirements.txt
+
+# ── Core AI / LangChain ──────────────────────────────────────────────────────
+langchain>=0.3.0
+langchain-ollama>=0.2.0
+langchain-core>=0.3.0
+langchain-community>=0.3.0
+
+# ── Speech Recognition ───────────────────────────────────────────────────────
+SpeechRecognition>=3.10.0
+pyaudio>=0.2.14          # Microphone access (see INSTALL.md for system deps)
+
+# ── Text-to-Speech ───────────────────────────────────────────────────────────
+pyttsx3>=2.90
+
+# ── Utilities ────────────────────────────────────────────────────────────────
+requests>=2.31.0         # HTTP requests (used by Ollama client)
+
+# ── GUI ──────────────────────────────────────────────────────────────────────
+# tkinter is included with Python standard library (no pip install needed)
+# If missing on Linux: sudo apt-get install python3-tk
